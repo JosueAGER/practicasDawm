@@ -1,0 +1,68 @@
+name: Deploy to Google Cloud Storage
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    env:
+      SOURCE_DIR: site
+      BUCKET: ${{ secrets.GCS_BUCKET }}      # ej: practicas-dawm-jg-gye (sin gs://)
+      DEST_PREFIX: "web/"                    # mantener slash final
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Auth to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          token_format: access_token
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_SA_EMAIL }}
+
+      - name: Install gcloud
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}   # recomendado
+
+      - name: Validate source dir
+        run: |
+          set -e
+          if [ ! -d "$SOURCE_DIR" ]; then
+            echo "ERROR: No existe $SOURCE_DIR"; exit 1
+          fi
+          echo "Contenido a publicar:"
+          find "$SOURCE_DIR" -maxdepth 2 -type f | sed 's/^/ - /'
+
+      - name: Dry-run (preview)
+        run: |
+          gcloud storage rsync --recursive \
+            --delete-unmatched-destination-objects \
+            --dry-run "$SOURCE_DIR" "gs://${BUCKET}/${DEST_PREFIX}"
+
+      - name: Upload to bucket
+        run: |
+          gcloud storage rsync --recursive \
+            --delete-unmatched-destination-objects \
+            "$SOURCE_DIR" "gs://${BUCKET}/${DEST_PREFIX}"
+
+      - name: Cache headers
+        run: |
+          set -e
+          # HTML sin caché
+          ( gcloud storage ls "gs://${BUCKET}/${DEST_PREFIX}**" || true ) \
+            | grep -Ei '\.html$' || true \
+            | while read -r obj; do
+                [ -n "$obj" ] && gcloud storage objects update "$obj" --cache-control="no-cache";
+              done
+
+          # Assets con caché largo (si existe carpeta assets/)
+          if gcloud storage ls "gs://${BUCKET}/${DEST_PREFIX}assets" >/dev/null 2>&1; then
+            gcloud storage objects update "gs://${BUCKET}/${DEST_PREFIX}assets/**" \
+              --cache-control="public, max-age=31536000, immutable"
+          fi
