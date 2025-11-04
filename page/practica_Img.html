@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Josue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practia Listas</title>
+	<meta http-equiv="refresh" content="10">
+	<link rel="icon" href="../assets/img/Pokemon/Alakazam.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_menu_horizontal.css">
+
+</head>
+    <!-- =============== Practica de Lista ================  -->
+
+<body>
+
+    <nav class="topNav">	
+            <a href="../index.html">Inicio </a> / 
+			<a href="../page/practica_Texto.html">Practica de etiqueta de texto </a> / <a href="../page/practica_Audio.html">Practica de etiqueta de audio</a> / 
+			<a href="../page/practica_Video.html">Practica de etiqueta de video</a> / 
+			<a href="../page/practica_Tablas.html">Practica de etiqueta de Tablas</a> / 
+			<a href="../page/practica_Listas.html">Practica de etiqueta de Listas</a> / 
+			<a href="../page/practica_Img.html">Practica de etiqueta de imagenes</a> / 
+			<a href="../page/practica_MenuVertical.html">Practica de etiqueta de menu vertical</a> / 
+			<a href="../page/practica_MenuHorizontal.html">Practica de etiqueta de menu horizontal</a> / 
+			<a href="../page/practica_Javascript.html">Practica de etiqueta de Javascript</a> / 
+			<a href="../page/practica_Plantilla.html">Practica de etiqueta de Plantilla</a> / 
+			<a href="https://sites.google.com/fiec.espol.edu.ec/mclarenp1/">Practica de etiqueta de Builder - Link a Google Site</a> / 
+			<a href="https://mydietjg.my.canva.site/innovaci-n-y-educaci-n">Practica de etiqueta de Canva - Link a Canva</a> / 
+			<a href="../page/practica_IA.html">Practica de etiqueta de Inteligencia Artificial. - Unifique el desarrollo</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario-2</a> / 
+			<a href="../page/practica_Css.html">Practica de etiqueta de Formulario</a> / 
+            <a href="../page/practica_crazy.html">Practica Crazy</a> / 
+
+	</nav>
+	<hr>
+    <main>
+        <h1>Practica de imagen</h1>
+        <!-- =============== frame para importar una pagina externa ================  -->
+         <iframe width="300" height="300" 
+         src="https://www.vago.com" 
+         title="Pagina externa" 
+         frameborder="1" 
+         style="border: 1px solid"></iframe>
+          <!-- =============== frame con video de youtube ================  -->
+        <iframe width="300" height="300" 
+        src="https://www.youtube.com/embed/AswyWSS19hw?si=G1b4nFlzfTq3ae6O" 
+        title="YouTube video player" 
+        frameborder="1" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+        <hr>
+        <!-- =============== etiquetas de imagenes ================  -->
+         <h3>Etiqueta img (basica - Imagen local)</h3>
+         <!-- Se debe de usar alt para describir en palabras la imagen -->
+          <!-- Esta descripcion ayuda al SEO, tener texto descriptivo que se usara en el momento que la imagen no pueda ser cargada -->
+           <!-- Por procesos de accesibilidad a no videntes -->
+         <img src="../assets/img/imagenFondo.png" 
+         width="300px"
+         height="300px"
+         alt="imagen de fondo de la naturalez en forma de dibujo">
+        <hr>
+         <h3>Etiqueta img (Medio - Imagen externa)</h3>
+           
+           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVwWWUpR2JYq-EQnbNMR3GVH4un9JJk03nWQ&s" 
+           width="300px"
+           height="300px"
+           alt="imagen de fondo de la naturalez en forma de dibujo">
+        <hr>
+         <!-- =============== Mapeo de imagenes ================  -->
+         <img src="../assets/img/Cloud.png" 
+         usemap="#NubeComputadora"
+         alt="Red de computadoras">  
+
+        
+        <map name="NubeComputadora">
+            <area target="" alt="Servidor" title="" href="../page/nube/device.html" coords="230,175,166,180,224,222,299,184,240,143,174,172" shape="poly"></area>
+          
+            <area target="" alt="" title="" href="../page/nube/cescritorio.html" coords="439,115,371,141,452,180,569,151,575,80,400,51,370,128" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/servidor.html" coords="664,175,826,255,929,56,729,7,663,45" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/servidor_izquierdo.html" coords="41,371,163,324,130,227,12,267" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/smartphone.html" coords="10,599,67,682,232,572,153,518" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/laptop.html" coords="473,702,560,760,631,709,627,627,540,567,466,680" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/movil.html" coords="797,544,873,612,967,514,869,466" shape="poly"></area>
+            
+            <area target="" alt="" title="" href="../page/nube/computadora_inferior.html" coords="850,370,963,419,1014,304,898,244" shape="poly"></area> --> -->
+        </map>
+        <hr>
+        <!-- diseño responsivo solo imagenes -->
+         <h3>Imagenes responsivas (Adapatable segun las dimensiones de las pantallas)</h3>
+         <picture>
+            <source media="(min-width:750px)" srcset="../assets/img/img1_650.jpeg">
+            <source media="(min-width:650px)" srcset="../assets/img/img2_450.jpg">
+            <source media="(min-width:550px)" srcset="../assets/img/img3_350.jpeg">
+            <source media="(min-width:350px)" srcset="../assets/img/img4_250.jpg">
+
+            <img src="../assets/img/img4.webp">
+         </picture>
+    </main>
+
+    <!-- =============== Pie de pagina ================  -->
+
+	<footer>
+		<p>Desarrollado por: Josue</p>
+		<p>
+			<a href="mailto:joadguer@espol.edu.ec">Correo</a> /  | 
+			<a href="tel:+593994949494">Celular</a> / 
+		</p>
+		<p>© 2025 - Pagina de practicas academicas | Espol</p>
+	</footer>
+
+	<!-- Contador de visitas -->
+	 <!-- solo en la pagina principal
+	   -->
+</body>
+</html>

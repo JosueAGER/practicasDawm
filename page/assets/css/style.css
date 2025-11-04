@@ -1,0 +1,135 @@
+/* Fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f0eb;
+    color: #4e342e;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Encabezado */
+header {
+    background-color: #8d6e63;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Sección principal */
+.bienvenida {
+    padding: 50px 20px;
+}
+
+.bienvenida h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.bienvenida p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Botón interactivo */
+button {
+    background-color: #8d6e63;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #4e342e;
+}
+
+/* Pie de página */
+footer {
+    background-color: #8d6e63;
+    color: #ffffff;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+
+.imagen-cafe {
+    width: 60%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;
+    display: block;
+}
+
+
+/* Sección de productos */
+.productos {
+    background-color: #fff8e1;
+    padding: 50px 20px;
+}
+
+.productos h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #4e342e;
+}
+
+.producto {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 15px;
+    text-align: center;
+}
+
+.imagen-producto {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    color: #4e342e;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    font-size: 0.95em;
+    margin-bottom: 8px;
+}
+
+.precio {
+    font-weight: bold;
+    color: #8d6e63;
+}

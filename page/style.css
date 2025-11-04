@@ -1,0 +1,47 @@
+ /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Enlaces del navbar */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        /* Efecto hover */
+        nav ul li a:hover {
+            background-color: #575757;
+        }
+
+        /* Adaptación para móviles */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Josue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practia Texto</title>
+	<!-- <meta http-equiv="refresh" content="10"> -->
+	<link rel="icon" href="../assets/img/Pokemon/Weedle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style_menu_horizontal.css">
+
+	<!-- Un script antes del body - File externo -->
+
+
+	<!-- Un script antes del body - Interno -->
+	<script> 
+		alert("Este es mi primer mensaje Alert - Interno antes del body")
+	</script>
+
+</head>
+    <!-- =============== Practica de Javascript ================  -->
+	 
+
+		<!-- =============== Javascript puede ejecutarse tanto en el documento HTML o desde un file externo  ================  -->
+		<!-- =============== Javascript puede ejecutarse antes del body, dentro del body, despues, en file externo ================  -->
+
+<body>
+
+    <nav class="topNav">	
+            <a href="../index.html">Inicio </a> / 
+			<a href="../page/practica_Texto.html">Practica de etiqueta de texto </a> / <a href="../page/practica_Audio.html">Practica de etiqueta de audio</a> / 
+			<a href="../page/practica_Video.html">Practica de etiqueta de video</a> / 
+			<a href="../page/practica_Tablas.html">Practica de etiqueta de Tablas</a> / 
+			<a href="../page/practica_Listas.html">Practica de etiqueta de Listas</a> / 
+			<a href="../page/practica_Img.html">Practica de etiqueta de imagenes</a> / 
+			<a href="../page/practica_MenuVertical.html">Practica de etiqueta de menu vertical</a> / 
+			<a href="../page/practica_MenuHorizontal.html">Practica de etiqueta de menu horizontal</a> / 
+			<a href="../page/practica_Javascript.html">Practica de etiqueta de Javascript</a> / 
+			<a href="../page/practica_Plantilla.html">Practica de etiqueta de Plantilla</a> / 
+			<a href="https://sites.google.com/fiec.espol.edu.ec/mclarenp1/">Practica de etiqueta de Builder - Link a Google Site</a> / 
+			<a href="https://mydietjg.my.canva.site/innovaci-n-y-educaci-n">Practica de etiqueta de Canva - Link a Canva</a> / 
+			<a href="../page/practica_IA.html">Practica de etiqueta de Inteligencia Artificial. - Unifique el desarrollo</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario-2</a> / 
+			<a href="../page/practica_Css.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_crazy.html">Practica Crazy</a> / 
+
+	</nav>
+	<hr>
+	<main>
+		<hr>
+		<h1>Practica de Javascript</h1>
+		<section>
+			<p>
+				Javascript es un lenguaje de programacion que se ejecuta tanto en el frontend como en el backend
+			</p>			
+			<p>
+				Javascript lo usamos en varios Frameworks
+			</p>
+			<ol>
+				<li>React</li>
+				<li>Vue.js</li>
+				<li>Angular</li>
+				<li>Svelte/SvelteKit</li>
+				<li>Next.js</li>
+				<li>Nuxt.js</li>
+				<li>Astro</li>
+			</ol>
+		</section>
+		<hr>
+		<section>
+			<p>
+				Para programar en Javascript, usted hara uso de sus conocimientos en programacion <br>
+				Variables: Locales, globales, estaticas/constantes <br>
+				Estructuras de control: if/else <br>
+				Bucles:  for/while <br>
+				Funciones <br>
+			</p>
+		</section>
+		<section>
+			<h3>Tipos de variables</h3>
+			<ul>
+				<li>Let: Locales - Dentro de una función o bloque de programación</li>
+				<li>var: Globales - Las podemos utilizar en cualquier parte del desarrollo</li>
+				<li>const: Son varialbes de valores fijos, que no pueden cambiar de valor durante su ejecución</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Tipos de Datps</h3>
+			<ul>
+				<li>String: caracteres alfanumericos</li>
+				<li>Number: valores numericos</li>
+				<li>Booleano: True/False</li>
+				<li>Arrays: Listas["Elemento  Lista #1","Elemento  Lista #2", "Elemento  Lista #n"]</li>
+				<li>Ojbect - Diccionarios: NombreDiccionario{"Clave1:" "Valor1", "Clave2": "Valor2", "ClaveN": "ValorN"}</li>
+				<li>Null - Valor indefinido</li>
+			</ul>
+		</section>
+
+		<section>
+			<h3>Programación en javascript</h3>
+			<ul>
+				<li>Condiciones: If/else</li>
+				<li>Estructuras: Switch</li>
+				<li>Ciclos/bucles: For, While, do-while</li>
+				<li>for ... of - para recorrer colecciones (arrays)</li>
+				<li>for ...in - para recorrer los obj/dicc (clave)</li>
+			</ul>
+		</section>
+		<section>
+			<h3>Momento - Lugar en el que se ejecuta javascript</h3>
+			<ol>
+				<li>Script dentro del html - embebido en medio del html (inline Script Early)</li>
+				<li>Dentro de un control - Uso de los atributos en los elementos HTML (Inline Event Handlers)</li>
+				<li>Script al final (Antes de cerrar el body) - Script embebido antes de cerrar el body (Inline Script Late)</li>
+				<li>Archivo Externo (.js) - Script externo vinculado al HTML - (External Script)</li>
+
+			</ol>
+		</section>
+
+		<section>
+			<h3>Prueba de ejecucion</h3>
+			<ol>
+				<li>Script dentro del html - Inline Script Early <br>
+					<script>
+						document.write("Este es mi primer mensaje generado con document.write - Dentro del body");
+					</script>
+				</li>
+				<li>Dentro de un control - Inline Event Handlers <br>
+					<!-- Debemos conocer los eventos que hace el usuario -->
+				<button onclick="alert('Script ejecutado dentro de un control de button')" >
+					Presioname 1
+				</button> </li>
+				<li>Script al final - Inline Script Late <br>
+					<button id="BtnPresioname2" onclick="mostrarAlert()">
+						Presioname 2
+					</button>
+
+					<!-- se recomienda no hacer llamados a funcion, en su lugar trabajar con los id --> 
+					 
+				</li>
+				<li>Archivo Externo (.js) - External Script <br>
+					<button id="BtnPresioname3">
+						Presioname 3
+					</button>
+					<!-- Hackear al usuario -->
+					 <!-- modificar controles por medio de eventos	 -->
+					  <h5>Modificar el contenido del html desde javascript</h5>
+					  <p id="Parrafo_1">
+						Este parrafo fue escrito con html, los fuentes no deberian ser modificados desde el script
+						.
+					  </p>
+					  <!-- modificar el contenido caption de un boton -->
+
+					  <button id="BtnPresioname4">Presioname 4</button> <br>
+				</li>
+			</ol>
+		</section>
+
+		<section>
+			<h3>Métodos relacionados</h3>
+			<h5>Eventos javascript para paginas web</h5>
+			<!-- Recuerdo CSS: se trabaja con selectores 
+			 -->
+
+			<ol>
+				<li>getElementById
+					<br>
+					<p>Afectamos a un unico elemento por su id 
+						document.getElementById("IdDelControl")
+					</p>
+					<h2 id="IdTitulo">Titulo Original</h2>
+
+
+				</li>
+				<li>getElementByClassName()
+
+					<p>
+						Todos los elementos que tenga la misma clase se ven afectados por: 
+						getElementByClassName()
+					</p>
+					<p class="item">Este es el parrafo numero 1 con la clase "item"</p>
+					<p class="item">Este es el parrafo numero 2 con la clase "item"</p>
+					<p class="item">Este es el parrafo numero 3 con la clase "item"</p>
+					<p class="item">Este es el parrafo numero 4 con la clase "item"</p>
+
+				</li>
+
+				<li>
+					getElementsByTagName()
+					<p>
+						Todos los elementos que tengan la misma etiqueta: getElementsByTagName(p);
+					</p>
+				</li>
+
+				<li>querySelector
+					<p>
+						El primer elemento que coincida con un selector CSS, document.querySelector()
+					</p>
+					<p>veamos la ejecucion paso a paso</p>
+				</li>
+
+				<li>querySelectorAll
+					<p>Todos los elementos HTML que coincidan con un selector  querySelectorAll</p>
+
+					<div>
+						Primero
+					</div>
+					<div>
+						Segundo
+					</div>
+					<div>
+						Tercero
+					</div>
+					<div>
+						Cuarto
+					</div>
+					<div>
+						Quinto
+					</div>
+				</li>
+
+			</ol>
+		</section>
+
+		<section>
+			<!-- Investigar (Se puede usar chatpgt) -->
+			 <!-- completar la teoria en esta pagina web -->
+			<h3>Eventos programables Javascript dentro de una página web</h3>
+			<ol>
+				<li>DOMContentLoaded
+					<p>Este evento se dispara cuando el DOM se ha cargado completamente pero sin esperar por los CSS, imagenes y subframes. 
+					
+					</p>
+				</li>
+				<li>load
+					<p>
+						El evento load se dispara cuando una página web y todos sus recursos (imágenes, hojas de estilo, scripts, etc.) se han cargado completamente.
+					</p>
+				</li>
+				<li>unload
+					<p>
+						Este evento se dispara cuando la página está a punto de ser <strong> descargada </strong>, ya sea porque el usuario navega a otra página o cierra la ventana del navegador
+					</p>
+				</li>
+				<li>beforeunload
+
+					<p>
+						Este evento se activa antes de que la página sea descargada, permitiendo que el navegador muestre un mensaje de advertencia al usuario si está a punto de abandonar la página.
+					</p>
+				</li>
+				<li>visibilitychange
+					<p>Este evento se activa cuando la visibilidad de la página cambia, es decir, cuando el usuario minimiza, cambia de pestaña o se aleja de la página.</p>
+				</li>
+				<li>readystatechange
+					<p>	
+						Este evento se dispara cada vez que cambia el estado de carga de un documento.
+					</p>
+				</li>
+				<li>fullscreenchange y fullscreenerror
+
+					<p>
+						fullscreenchange Se activa cuando un elemento entra o sale del modo de pantalla completa.
+					</p>
+					<p>
+						fullscreenerror Se activa si hay un error al intentar poner un elemento en modo de pantalla completa
+
+						Ambos eventos son útiles para gestionar el modo de pantalla completa en la página, permitiendo, por ejemplo, mostrar mensajes de error o actualizar la interfaz cuando el usuario entra o sale del modo de pantalla completa.
+					</p>
+				</li>
+				<li>copy, cut, paste
+
+					<p>
+						Estos eventos se disparan cuando se realiza una acción de copiar (copy), cortar (cut) o pegar (paste) en un área seleccionable de la página.
+					</p>
+				</li>
+				<li>selectionchange
+					<p>
+						Este evento se dispara cuando el rango de selección de texto en el documento cambia (por ejemplo, cuando el usuario selecciona o deselecciona texto).
+					</p>
+				</li>
+				<li>scroll
+					<p>
+						Permite realizar acciones basadas en el desplazamiento, como cargar contenido adicional cuando el usuario llega al final de la página o mostrar/ocultar elementos.
+					</p>
+				</li>
+			</ol>
+		</section>
+	</main>
+
+	<!-- script dentro del body - Interno -->
+	<script>
+		alert("Este es mi primer mensaje Alert - Interno dentro del body")
+	</script>
+    <!-- =============== Pie de pagina ================  -->
+	<footer>
+		<p>Desarrollado por: Josue</p>
+		<p>
+			<a href="mailto:joadguer@espol.edu.ec">Correo</a> /  | 
+			<a href="tel:+593994949494">Celular</a> / 
+		</p>
+		<p>© 2025 - Pagina de practicas academicas | Espol</p>
+	</footer>
+
+	
+	<!-- script despues del body - Interno -->
+	<script>
+		alert("Este es mi primer mensaje Alert - Interno despues del body");
+		document.write("Este es mi primer mensaje generado con document.write - Dentro del body");
+		function mostrarAlert(){
+			alert("Este mensaje se muestra cuando presiono el boton: Presioname 2 - Script Interno")
+		}
+	</script>
+
+	<!-- Es considerado una mala practica llamar a javascript antes del body, sea interno o externo -->
+	<script src="../assets/js/javascript.js"> </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Josue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practia Texto</title>
+	<meta http-equiv="refresh" content="10">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">        
+
+    <link rel="icon" href="../assets/img/Pokemon/Vileplume.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_menu_horizontal.css">
+
+    <!-- con esta hoja de estilo se resetea el formato del browser, hay que descargarla -->
+    <!-- <link rel="stylesheet" href="./assets/css/style_reset.css"> -->
+
+</head>
+    <!-- =============== Practica de etiquetas de Texto ================  -->
+
+<body >
+    <header>
+        <nav class="topNav">	
+                <a href="../index.html">Inicio </a> / 
+                <a href="../page/practica_Texto.html">Practica de etiqueta de texto </a> / <a href="../page/practica_Audio.html">Practica de etiqueta de audio</a> / 
+                <a href="../page/practica_Video.html">Practica de etiqueta de video</a> / 
+                <a href="../page/practica_Tablas.html">Practica de etiqueta de Tablas</a> / 
+                <a href="../page/practica_Listas.html">Practica de etiqueta de Listas</a> / 
+                <a href="../page/practica_Img.html">Practica de etiqueta de imagenes</a> / 
+                <a href="../page/practica_MenuVertical.html">Practica de etiqueta de menu vertical</a> / 
+                <a href="../page/practica_MenuHorizontal.html">Practica de etiqueta de menu horizontal</a> / 
+                <a href="../page/practica_Javascript.html">Practica de etiqueta de Javascript</a> / 
+                <a href="../page/practica_Plantilla.html">Practica de etiqueta de Plantilla</a> / 
+                <a href="https://sites.google.com/fiec.espol.edu.ec/mclarenp1/">Practica de etiqueta de Builder - Link a Google Site</a> / 
+                <a href="https://mydietjg.my.canva.site/innovaci-n-y-educaci-n">Practica de etiqueta de Canva - Link a Canva</a> / 
+                <a href="../page/practica_IA.html">Practica de etiqueta de Inteligencia Artificial. - Unifique el desarrollo</a> / 
+                <a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+                <a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario-2</a> / 
+                <a href="../page/practica_Css.html">Practica de etiqueta de Formulario</a> / 
+                <a href="../page/practica_crazy.html">Practica Crazy</a> / 
+
+        </nav>
+    </header>
+	<hr>
+
+    <main>
+        <h1 class="titulo">Practica de Css</h1>
+
+        <span>Css nos sirve para dar estilo y diseño a nuestra pagina web, para aplicarlo tenenmos 3 opciones</span>
+        <div class="comportamiento">
+            <p class="caja"> Modelo cajas #1: <br>
+                 <br>
+                1.- En linea - codigo embebido
+                p class="cuerpo"> style="color:red">linea de codigo con codigo embebido p <br></p>
+                
+            <p class="caja">
+                
+                2.- Coding interno - Codigo en la cabecera del archivo
+                style
+                    p {
+                        background-color: blue;
+                    }
+                style <br>
+               
+                
+                
+            </p>
+            <p class="caja">  Modelo cajas #2: <br>
+                3.- Externo - file .css <br>
+                link rel="stylesheet" href="styles.css"</p>
+        </div>
+        <div class="comportamiento">
+             <p class="caja">  Modelo cajas: <br>
+           todo elmenento html que se presenta en pantalla se debe tratar como caja</p>
+           <p class="caja">  Modelo cajas 2: <br>
+            todo elmenento html que se presenta en pantalla se debe tratar como caja</p>
+        </div>
+            <section class="Resalta">
+                <article>
+                    <h4>Notas</h4>
+                    <p class="bitcount-grid-single">
+                        1.- Siempre se ejecuta de arriba hacia abajo <br>
+                        2.- Tener con motar las etiquetas en el diseño <br>
+                        3.- Valide el reseteo antes de aplicar el diseño <br>
+                    </p>
+                </article>
+            </section>
+            <span>
+                <h3>Hipervinculos</h3>
+                <hr>
+                <h5>Hipervinculos abrir en una nueva ventana</h5>
+                    <p>
+                        Para abrir hipervínculos en una nueva pestaña, se puede hacer clic en el enlace con la rueda del ratón, usar la combinación de teclas Ctrl + clic, o añadir el atributo target="_blank" <a href="../page/practica_Audio.html" target="_blank"> código HTML del enlace </a>. 
+
+                    </p> <br>
+                <h5>Hipervinculos abrimos en la misma pestaña</h5>
+                    <p> 
+                        Para que un hipervínculo se abra en la misma pestaña, se debe usar el atributo target="_self" <a href="../page/practica_Audio.html" target="_self">  en la etiqueta</a>. Por defecto, si no se especifica el atributo target, los navegadores abren los enlaces en la misma pestaña, por lo que es posible que este atributo no sea necesario en la mayoría de los casos. Sin embargo, si un enlace está configurado para abrirse en una nueva pestaña (target="_blank"), puedes usar target="_self" para forzar su apertura en la misma pestaña. 
+
+                    </p> <br>
+                <h5>Hipervinculos abrr en nueva pestaña modo seguro</h5>
+                    <p>
+                        rel="noopener":
+Previene que la nueva pestaña acceda a la ventana de la página original a través de  <a href="../page/practica_Audio.html" target="_blank" rel="noopener">JavaScript</a>. 
+
+rel="noreferrer":
+Evita que se envíe información del sitio de origen a la página de destino
+
+                        rel="noopener noreferrer":
+Previene que la nueva pestaña acceda a la página original y evita ataques de phishing (tabnabbing)
+                    </p> <br>
+            </span>
+            <hr>
+
+            <h2>Botones con estilo</h2>
+            <h6>Evento over</h6>
+            <button>Presioname #1</button>
+            <button class="Btn">Presioname #2</button>
+    </main>
+    <!-- =============== Pie de pagina ================  -->
+
+	<footer>
+		<p >Desarrollado por: Josue</p>
+		<p >
+			<a href="mailto:joadguer@espol.edu.ec">Correo</a> /  | 
+			<a href="tel:+593994949494">Celular</a> / 
+		</p>
+		<p >© 2025 - Pagina de practicas academicas | Espol</p>
+	</footer>
+
+	<!-- Contador de visitas -->
+	 <!-- solo en la pagina principal
+	   -->
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Josue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practia Texto</title>
+	<meta http-equiv="refresh" content="10">
+	<link rel="icon" href="../assets/img/Pokemon/Arcanine.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style_menu_horizontal.css">
+
+</head>
+    <!-- =============== Practica de etiquetas de Texto ================  -->
+
+<body>
+
+    <nav class="topNav">	
+            <a href="../index.html">Inicio</a> / 
+			<a href="../page/practica_Texto.html">Practica de etiqueta de texto </a> / <a href="../page/practica_Audio.html">Practica de etiqueta de audio</a> / 
+			<a href="../page/practica_Video.html">Practica de etiqueta de video</a> / 
+			<a href="../page/practica_Tablas.html">Practica de etiqueta de Tablas</a> / 
+			<a href="../page/practica_Listas.html">Practica de etiqueta de Listas</a> / 
+			<a href="../page/practica_Img.html">Practica de etiqueta de imagenes</a> / 
+			<a href="../page/practica_MenuVertical.html">Practica de etiqueta de menu vertical</a> / 
+			<a href="../page/practica_MenuHorizontal.html">Practica de etiqueta de menu horizontal</a> / 
+			<a href="../page/practica_Javascript.html">Practica de etiqueta de Javascript</a> / 
+			<a href="../page/practica_Plantilla.html">Practica de etiqueta de Plantilla</a> / 
+			<a href="https://sites.google.com/fiec.espol.edu.ec/mclarenp1/">Practica de etiqueta de Builder - Link a Google Site</a> / 
+			<a href="https://mydietjg.my.canva.site/innovaci-n-y-educaci-n">Practica de etiqueta de Canva - Link a Canva</a> / 
+			<a href="../page/practica_IA.html">Practica de etiqueta de Inteligencia Artificial. - Unifique el desarrollo</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario-2</a> / 
+			<a href="../page/practica_Css.html">Practica de etiqueta de Formulario</a> / 
+            <a href="../page/practica_crazy.html">Practica Crazy</a> / 
+
+	</nav>
+	<hr>
+        <!-- =============== Practica de tablas ================  -->
+
+    <h3>Practica de tablas</h3>
+    <h3>Horario de Clases</h3>
+<!-- etiquetas de tablas: -->
+ <!-- <table> tabla - contenedor principal de la tabla -->
+    <!-- <thead> cabezera de la tabla - presenta los titulos de las columnas-->
+     <!-- <th> presenta el valor de la cabecera (en negrita, cursiva y cetrada)-->
+<!-- <td> son los datos de la tabla - presenta en pantalla el valor -->
+    <!-- tbody agrupa el cuerpo de la tabla -->
+     <!-- tr agrupa las celdas que pertenecen a las misma fila -->
+
+     <!--   -->
+    <table border="1" cellpadding="8" cellspacing="0" align="center" width="80%">
+        <thead>
+            <tr bgcolor="#3333333" style="color:white; text-align: center;">
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+           <!-- Fila #1 -->
+           <tr>
+            <td>7:00 - 9:00</td>  <!-- Hora -->
+            <td bgcolor="#93AB45"  style="color:black; text-align: center" colspan="2">Desarrollado Web</td>  <!-- Lunes -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>     <!-- Miércoles -->
+            <td bgcolor="#43DFFF"  style="color:black; text-align: center">Circuito</td>          <!-- Jueves -->
+            <td rowspan="2"  bgcolor="#AAA1"  style="color:black; text-align: center">Matemática</td>        <!-- Viernes -->
+          </tr>
+    
+          <!-- Fila #2 -->
+          <tr>
+            <td>9:00 - 11:00</td>      <!-- Hora -->
+            <td bgcolor="#AAA1"  style="color:black; text-align: center">Matemática</td>        <!-- Lunes -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>  <!-- Martes -->
+            <td bgcolor="#43DFFF"  style="color:black; text-align: center">Circuito</td>                  <!-- Miércoles -->
+            <td bgcolor="#437FFF"  style="color:black; text-align: center">Integrales II</td>          <!-- Jueves -->
+            
+          </tr>
+    
+          <!-- Fila #3 -->
+          <tr>
+            <td>11:00 - 13:00</td>     <!-- Hora -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>  <!-- Lunes -->
+            <td bgcolor="#43DFFF"  style="color:black; text-align: center">Circuito</td>  <!-- Martes -->
+            <td bgcolor="#437FFF"  style="color:black; text-align: center">Integrales II</td>     <!-- Miércoles -->
+            <td bgcolor="#18DABC"  style="color:black; text-align: center">Titulación</td>          <!-- Jueves -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>        <!-- Viernes -->
+          </tr>
+
+            <!-- Fila #4 -->
+            <tr>
+            <td>13:00 - 14:00</td>     <!-- Hora -->
+            <td colspan="5" bgcolor="#21345F"  style="color:white; text-align: center">Almuerzo</td>          <!-- Lunes -->
+            </tr>
+
+            <!-- Fila #5 -->
+            <tr>
+            <td>14:00 - 15:00</td>     <!-- Hora -->
+            <td bgcolor="#43DFFF"  style="color:black; text-align: center">Circuito</td>          <!-- Lunes -->
+            <td bgcolor="#437FFF"  style="color:black; text-align: center">Integrales II</td>     <!-- Martes -->
+            <td bgcolor="#18DABC"  style="color:black; text-align: center">Titulación</td>        <!-- Miércoles -->
+            <td bgcolor="#43DFFF"  style="color:black; text-align: center">Circuito</td>          <!-- Jueves -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>     <!-- Viernes -->
+            </tr>
+
+            <!-- Fila #6 -->
+            <tr>
+            <td>15:00 - 16:00</td>     <!-- Hora -->
+            <td bgcolor="#437FFF"  style="color:black; text-align: center">Integrales II</td>     <!-- Lunes -->
+            <td bgcolor="#18DABC"  style="color:black; text-align: center">Titulación</td>        <!-- Martes -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" rowspan="2">IA - Práctica</td>     <!-- Miércoles -->
+            <td bgcolor="#AAA1"  style="color:black; text-align: center">Matemática</td>        <!-- Jueves -->
+            <td bgcolor="#437FFF"  style="color:black; text-align: center">Integrales II</td>     <!-- Viernes -->
+            </tr>
+
+            <!-- Fila #7 -->
+            <tr>
+            <td>16:00 - 17:00</td>     <!-- Hora -->
+            <td bgcolor="#18DABC"  style="color:black; text-align: center">Titulación</td>  <!-- Lunes -->
+            <td bgcolor="#25F445"  style="color:black; text-align: center" >IA - Práctica</td>  <!-- Martes -->
+              <td bgcolor="#93AB45"  style="color:black; text-align: center;">Desarrollado Web</td>          <!-- Jueves -->
+              <td bgcolor="#93AB45"  style="color:black; text-align: center;">Desarrollado Web</td>        <!-- Viernes -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- =============== Pie de pagina ================  -->
+
+	<footer>
+		<p>Desarrollado por: Josue</p>
+		<p>
+			<a href="mailto:joadguer@espol.edu.ec">Correo</a> /  | 
+			<a href="tel:+593994949494">Celular</a> / 
+		</p>
+		<p>© 2025 - Pagina de practicas academicas | Espol</p>
+	</footer>
+
+	<!-- Contador de visitas -->
+	 <!-- solo en la pagina principal
+	   -->
+</body>
+</html>

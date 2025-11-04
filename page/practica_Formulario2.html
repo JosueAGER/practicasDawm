@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="description" content="practicas-- html, css, js">
+	<meta name="keywords" content="HTML, CSS, Javascript">
+	<meta name="author" content="Josue">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practia Texto</title>
+
+	<link rel="icon" href="../assets/img/Pokemon/Vileplume.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/css/styleFormulario2.css">
+	<link rel="stylesheet" href="./assets/css/style_menu_horizontal.css">
+
+</head>
+    <!-- =============== Practica de etiquetas de Texto ================  -->
+<body>
+
+    <nav class="topNav">	
+            <a href="../index.html">Inicio </a> / 
+			<a href="../page/practica_Texto.html">Practica de etiqueta de texto </a> / <a href="../page/practica_Audio.html">Practica de etiqueta de audio</a> / 
+			<a href="../page/practica_Video.html">Practica de etiqueta de video</a> / 
+			<a href="../page/practica_Tablas.html">Practica de etiqueta de Tablas</a> / 
+			<a href="../page/practica_Listas.html">Practica de etiqueta de Listas</a> / 
+			<a href="../page/practica_Img.html">Practica de etiqueta de imagenes</a> / 
+			<a href="../page/practica_MenuVertical.html">Practica de etiqueta de menu vertical</a> / 
+			<a href="../page/practica_MenuHorizontal.html">Practica de etiqueta de menu horizontal</a> / 
+			<a href="../page/practica_Javascript.html">Practica de etiqueta de Javascript</a> / 
+			<a href="../page/practica_Plantilla.html">Practica de etiqueta de Plantilla</a> / 
+			<a href="https://sites.google.com/fiec.espol.edu.ec/mclarenp1/">Practica de etiqueta de Builder - Link a Google Site</a> / 
+			<a href="https://mydietjg.my.canva.site/innovaci-n-y-educaci-n">Practica de etiqueta de Canva - Link a Canva</a> / 
+			<a href="../page/practica_IA.html">Practica de etiqueta de Inteligencia Artificial. - Unifique el desarrollo</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario-2</a> / 
+			<a href="../page/practica_Formulario.html">Practica de etiqueta de Formulario</a> / 
+			<a href="../page/practica_crazy.html">Practica Crazy</a> / 
+
+	</nav>
+	<hr>
+    <!-- =============== Pie de pagina ================  -->
+	<h1>Practica de Formulario 2</h1>
+	<!-- En Ajax recargamaos informacion en pantalla  -->
+    <fieldset>
+		<legend>Datos del Usuario</legend> 
+
+	<!-- El formulario debe de retornar los valores de cada elemento al momento del submit, llamo a la funcion fncDatos-->
+	<form id="frmDatos" action="" method="POST" name="frmDatos">
+		<!-- Nombres -->
+            <label for="TxtNombre">Nombres:</label>
+            <input type="text" id="TxtNombre" name="TxtNombre" placeholder="Ingrese su nombre" required><br><br>
+			<!-- Apellidos -->
+            <label for="TxtApellido">Apellidos:</label>
+            <input type="text" id="TxtApellido" name="TxtApellido" placeholder="Ingrese su Apellido" required><br><br>
+				
+            <!-- Correo -->
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" placeholder="nombre@dominio.com"><br><br>
+            
+            <!-- Select -->
+            <label for="SltPais">Pais:</label>
+            <select name="SltPais" id="SltPais" required>
+                <option value="">Seleccione</option>
+                <option value="593">Ecuador</option>
+                <option value="51">Peru</option>
+				<option value="57">Colombia</option>
+				<option value="52">Mexico</option>
+            </select>
+            <br><br>
+			<!--comentarios -->
+			<label for="TxtComentario">Comentarios: </label>
+			<textarea id="TxtComentario" required name="TxtComentario" placeholder="Dinos tu opinon"></textarea>
+			
+			<fieldset>
+                <legend>Genero</legend>
+				<input type="radio" id="rdoGeneroM" name="rdoGenero" value="Masculino">
+                <label for="rdoGeneroM">Masculino</label><br>
+				<input type="radio" id="rdoGeneroF" name="rdoGenero" value="Femenino">
+                <label for="rdoGeneroF">Femenino</label><br>
+            </fieldset><br>
+			
+
+			<!--
+				se coloca un name igual para que solo se pueda seleccionar uno
+			-->
+				
+				
+				<fieldset>
+					<legend>Estado Civil:</legend>
+						<div>
+						<label>
+							<input type="radio" id="RdoOptEstCivil_S" name="EstCivil" value="01">
+							Soltero
+						</label>
+						<label>
+							<input type="radio" id="RdoOptEstCivil_C" name="EstCivil" value="02">
+							Casado
+						</label>
+						<label>
+							<input type="radio" id="RdoOptEstCivil_D" name="EstCivil" value="03">
+							Divorciado
+						</label>
+					</div>
+				</fieldset>
+			<!-- check -->
+			<fieldset>
+				<input type="checkbox" name="ChkTermino" value=" " id="ChkTermino">
+                <label for="ChkTermino" >Aceptar terminos y condiciones</label><br>
+            </fieldset><br>
+
+			<!-- Submit -->
+            <button type="submit" id="btnEnviar" name="btnEnviar">Enviar</button><br><br>
+
+	</form>
+    </fieldset>
+
+	<footer>
+		<p>Desarrollado por: Josue</p>
+		<p>
+			<a href="mailto:joadguer@espol.edu.ec">Correo</a> /  | 
+			<a href="tel:+593994949494">Celular</a> / 
+		</p>
+		<p>© 2025 - Pagina de practicas academicas | Espol</p>
+	</footer>
+
+	<script src="./assets/js/JsFormulario2.js"></script>
+</body>
+</html>

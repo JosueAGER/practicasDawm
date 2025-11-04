@@ -1,0 +1,20 @@
+footer{
+    background-color: #111;
+    color: #eaeaea;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 3px solid #04AA6D;
+    font-size: 14px;
+    max-width: 1200px;
+    margin: 0 auto;   /* esto centra el contenido en pantalla */
+    }
+    footer a{
+    color: #04AA6D;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: color 0.3s;
+    }
+    footer a:hover{
+    color: #29ff9b;
+    }

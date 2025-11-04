@@ -1,0 +1,86 @@
+.dancing-script {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+  }
+
+nav {
+    overflow: scroll;
+}
+body {
+
+    font-family: "Dancing Script";
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    padding-top: 55px;
+    color: rgb(65, 50, 50);
+}
+
+
+.titulo {
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgb(82, 153, 169);
+}
+.intro {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Dancing Script";
+    color: white;
+
+}
+h3 {
+    font-size: 1.5rem;
+
+}
+
+h3:hover {
+    background-color: antiquewhite;
+}
+
+.modulos div {
+    display: none;
+}
+  
+.testimonios {
+    display: flex;
+
+}
+
+.testimonio {
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 10%;
+    border-radius: ;
+    display: inline-block;
+    margin: 5px;
+    color: white;
+    max-width: 450px;
+}
+.imgTestimonio {
+    width: 250px;
+}
+
+.questions {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.hero {
+    background-image: url('../../../assets/img/imagenFondo.png');
+    background-size: cover;        /* que cubra todo */
+    background-position: center;   /* centrada */
+    background-repeat: no-repeat;  
+    min-height: 70vh;              /* 70% de la altura de la ventana */
+    display: grid;
+    place-items: center;           /* centrar contenido */
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+}
